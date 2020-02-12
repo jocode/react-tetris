@@ -11,6 +11,47 @@ Copy and paste the starter files, for the background and styles in the game.
 
 > This proyect is based from :computer: [How to Build Tetris in React - GameDev Tutorial (with React Hooks!)](https://www.youtube.com/watch?v=ZGOaCxX8HIU). Recommended
 
+**_Para realizar el deploy de la aplicación en Github Pages ver [Deployment on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages)_**
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+```json
+"homepage" : "http://myname.github.io/myapp",
+```
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+- `npm install -g serve`
+- `serve -s build`
+
+Find out more about deployment here: bit.ly/CRA-deploy
+
+The project was built assuming it is hosted at /react-tetris/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+To publish it at http://jocode.github.io/react-tetris , run:
+
+- `npm install --save-dev gh-pages`
+
+Add the following script in your `package.json`.
+
+```js
+// ...
+    "scripts": {
+      // ...
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
+```
+
+Then run:
+
+- **`npm run deploy`**
+
 ## Available Scripts
 
 In the project directory, you can run:
